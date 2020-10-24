@@ -1,4 +1,4 @@
-![logo](_media/logo.png)
+![logo](_media/logo.png =100x100)
 # GoPUP 项目
 ## 所采集的数据皆来自公开的数据源，不涉及任何个人隐私数据和非公开数据
 
