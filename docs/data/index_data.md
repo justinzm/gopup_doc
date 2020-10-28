@@ -399,15 +399,15 @@ print(index_df)
 
 目标地址: https://trends.google.com
 
-描述: 获取指定 **词语** 的谷歌指数数据；需要翻墙获取接口数据
+描述: 获取指定 **词语** 的谷歌指数数据；需要通过代理访问
 
 输入参数
 
 名称|类型|必选|描述
 ---|:---:|:---:|---
 keyword|str|Y|keyword="股票"
-start_date|str|Y|start_date="2019-12-10T10"
-end_date|str|Y|end_date="2019-12-10T23"
+start_date|str|Y|start_date="2004-01-01", 如果要获取具体的实时分钟或小时数据, 请输入如 start_date="2019-12-10T10" , end_date="2019-12-10T23"
+end_date|str|Y|end_date="2019-12-01", 如果要获取具体的实时分钟或小时数据, 请输入如 start_date="2019-12-10T10" , end_date="2019-12-10T23"
 
 输出参数
 
@@ -431,7 +431,7 @@ print(index_df)
 
 目标地址: https://toolbox.google.com
 
-描述: 获取指定 **词语** 的谷歌事实查证；需要翻墙获取接口数据
+描述: 获取指定 **词语** 的谷歌事实查证；需要通过代理访问
 
 输入参数
 
