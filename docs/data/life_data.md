@@ -214,3 +214,61 @@ import gopup as gp
 df_index = gp.realtime_artist_flow()
 print(df_index)
 ```
+
+
+### 全国高等学校名单
+
+#### 全国普通高等学校名单
+
+接口: university
+
+目标地址: http://www.moe.gov.cn/
+
+描述: 获取全国普通高等学校名单
+
+输出参数
+
+| 名称 | 类型 | 默认显示 | 描述 |
+---|:---:|:---:|---
+| 序号 | str | Y | - |
+| 学校名称 | str | Y | - |
+| 学校标识码 | str | Y | - |
+| 主管部门 | float | Y | - |
+| 所在省市 | float | Y | - |
+| 所在地 | float | Y | - |
+| 办学层次 | str | Y | - |
+| 备注 | str | Y | - |
+
+接口示例
+
+```
+import gopup as gp
+df_index = gp.university()
+print(df_index)
+```
+
+#### 全国成人高等学校名单
+
+接口: adult_university
+
+目标地址: http://www.moe.gov.cn/
+
+描述: 获取全国成人高等学校名单
+
+输出参数
+
+| 名称 | 类型 | 默认显示 | 描述 |
+---|:---:|:---:|---
+| 序号 | str | Y | - |
+| 学校名称 | str | Y | - |
+| 学校标识码 | str | Y | - |
+| 主管部门 | float | Y | - |
+| 备注 | str | Y | - |
+
+接口示例
+
+```
+import gopup as gp
+df_index = gp.adult_university()
+print(df_index)
+```

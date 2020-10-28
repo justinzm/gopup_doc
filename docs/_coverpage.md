@@ -5,5 +5,5 @@
 
 * 同时本项目提供的数据接口及相关数据仅用于学术研究，任何个人、机构及团体使用本项目的数据接口及相关数据请注意商业风险。
 
-[GitHub](https://github.com/docsifyjs/docsify/)
+[GitHub](https://github.com/justinzm/gopup)
 [Get Started](README?id=GoPUP概况)
