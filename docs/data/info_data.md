@@ -1,10 +1,10 @@
-### 新闻联播文字稿
+### 新闻联播文字稿(会员)
 
 接口: cctv_news
 
 目标地址: http://www.xwlbo.com/
 
-描述: 获取新闻联播文字稿, 数据区间从 2018-至今
+描述: 获取新闻联播文字稿, 数据区间从 2018-至今；
 
 输入参数
 
@@ -24,6 +24,7 @@ date | str | Y | 日期 如：2020-10-01
 
 ```
 import gopup as gp
-df_index = gp.cctv_news(date="2020-10-10")
+g = gp.pro_api(token = "……")
+df_index = g.cctv_news(date="2020-10-10")
 print(df_index)
 ```

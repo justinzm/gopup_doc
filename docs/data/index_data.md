@@ -130,6 +130,143 @@ index_df = gp.baidu_media_index(word="口罩", start_date='2020-01-01', end_date
 print(index_df)
 ```
 
+#### 百度需求图谱
+
+接口: baidu_atlas_index
+
+目标地址: http://index.baidu.com
+
+描述: 获取指定 **词语** 的百度需求图谱
+
+输入参数
+
+名称|类型|必选|描述
+---|:---:|:---:|---
+word|str|Y|关键词 word="股票"
+date|datetime.datetime|N|date="2010-12-27" 默认最近日期
+cookie|str|Y|cookie="您在网页端登录百度指数后的 cookie 数据"
+
+输出参数
+
+名称|类型|默认显示|描述
+---|:---:|:---:|---
+period|str|Y|周期范围
+word|str|Y|相关词
+pv|float|Y|搜索热度
+ratio|float|Y|搜索变化率
+
+接口示例
+
+```
+import gopup as gp
+cookie = "此处输入您在网页端登录百度指数后的 cookie 数据"
+index_df = gp.baidu_atlas_index(word="口罩", date='2020-10-10', cookie=cookie)
+print(index_df)
+```
+
+
+#### 百度人群画像年龄分布
+
+接口: baidu_age_index
+
+目标地址: http://index.baidu.com
+
+描述: 获取指定 **词语** 的百度人群画像年龄分布
+
+输入参数
+
+名称|类型|必选|描述
+---|:---:|:---:|---
+word|str|Y|关键词 word="股票"
+cookie|str|Y|cookie="您在网页端登录百度指数后的 cookie 数据"
+
+输出参数
+
+名称|类型|默认显示|描述
+---|:---:|:---:|---
+period|str|Y|周期范围
+desc|str|Y|年龄范围
+tgi|float|Y|TGI指数
+word_rate|float|Y|关键词分布比率
+all_rate|float|Y|全网分布比率
+
+接口示例
+
+```
+import gopup as gp
+cookie = "此处输入您在网页端登录百度指数后的 cookie 数据"
+index_df = gp.baidu_age_index(word="口罩", cookie=cookie)
+print(index_df)
+```
+
+#### 百度人群画像性别分布
+
+接口: baidu_gender_index
+
+目标地址: http://index.baidu.com
+
+描述: 获取指定 **词语** 的百度人群画像性别分布
+
+输入参数
+
+名称|类型|必选|描述
+---|:---:|:---:|---
+word|str|Y|关键词 word="股票"
+cookie|str|Y|cookie="您在网页端登录百度指数后的 cookie 数据"
+
+输出参数
+
+名称|类型|默认显示|描述
+---|:---:|:---:|---
+period|str|Y|周期范围
+desc|str|Y|性别
+tgi|float|Y|TGI指数
+word_rate|float|Y|关键词分布比率
+all_rate|float|Y|全网分布比率
+
+接口示例
+
+```
+import gopup as gp
+cookie = "此处输入您在网页端登录百度指数后的 cookie 数据"
+index_df = gp.baidu_gender_index(word="口罩", cookie=cookie)
+print(index_df)
+```
+
+#### 百度人群画像兴趣分布
+
+接口: baidu_interest_index
+
+目标地址: http://index.baidu.com
+
+描述: 获取指定 **词语** 的百度人群画像兴趣分布
+
+输入参数
+
+名称|类型|必选|描述
+---|:---:|:---:|---
+word|str|Y|关键词 word="股票"
+cookie|str|Y|cookie="您在网页端登录百度指数后的 cookie 数据"
+
+输出参数
+
+名称|类型|默认显示|描述
+---|:---:|:---:|---
+period|str|Y|周期范围
+desc|str|Y|兴趣分类
+tgi|float|Y|TGI指数
+word_rate|float|Y|关键词分布比率
+all_rate|float|Y|全网分布比率
+
+接口示例
+
+```
+import gopup as gp
+cookie = "此处输入您在网页端登录百度指数后的 cookie 数据"
+index_df = gp.baidu_interest_index(word="口罩", cookie=cookie)
+print(index_df)
+```
+
 ### 头条数据
 
 #### 头条指数数据
