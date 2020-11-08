@@ -42,3 +42,39 @@ print(df_index)
 ```
 
 
+#### 货币汇率数据
+
+接口: exchange_rate
+
+目标地址: https://chl.cn/
+
+描述: 获取货币汇率数据(vip接口，找作者所要token)
+
+输入参数
+
+ | 名称 | 类型 | 必须 | 描述 | 
+ | ---|:---:|:---:|--- | 
+ | date | str | N | 日期 默认：当天日期 | 
+ | currency | str | N | 币种；默认：美元；覆盖币种有美元、欧元、港币、日元、英镑、澳元 | 
+
+输出参数
+
+| 名称 | 类型 | 默认显示 | 描述 |
+---|:---:|:---:|---
+| name | str | Y | 货币名称 |
+| date | str | Y | 日期 |
+| bankConversionPri | float | Y | 央行 汇率中间价 |
+| fBuyPri | float | Y | 现汇买入价 |
+| mBuyPri | float | Y | 现钞买入价 |
+| fSellPri | float | Y | 现汇卖出价 |
+| mSellPri | float | Y | 现钞卖出价 |
+
+
+接口示例
+
+```
+import gopup as gp
+g = gp.pro_api(token = "……")
+df_index = g.exchange_rate(date="2020-10-10", currency="美元")
+print(df_index)
+```
