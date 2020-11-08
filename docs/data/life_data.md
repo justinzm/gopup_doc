@@ -1,3 +1,64 @@
+### 中国油价数据
+
+#### 汽柴油历史调价信息
+
+接口: energy_oil_hist
+
+目标地址: http://data.eastmoney.com/cjsj/oil_default.html
+
+描述: 获取东方财富-中国油价-汽柴油历史调价信息；全部中国油价的所有历史数据
+
+输出参数
+
+| 名称 | 类型 | 默认显示 | 描述 |
+---|:---:|:---:|---
+| 日期 | str | - | 价格调整的日期 | 
+| 汽油价格 | float | - | 价格(元/吨) | 
+| 柴油价格 | float | - | 价格(元/吨) | 
+| 汽油涨幅 | str | - | 价格(元/吨) | 
+| 柴油涨幅 | str | - | 价格(元/吨) | 
+
+接口示例
+
+```
+import gopup as gp
+df_index = gp.energy_oil_hist()
+print(df_index)
+```
+
+#### 调价日的地区油价历史数据
+
+接口: energy_oil_detail
+
+目标地址: http://data.eastmoney.com/cjsj/oil_default.html
+
+描述: 获取东方财富-中国油价-地区油价
+
+输入参数
+
+名称|类型|必选|描述
+---|:---:|:---:|---
+| date | str | Y | date="2020-03-19"; 此日期为调价日期, 通过调用 energy_oil_hist 可以获取历史调价日期 | 
+
+输出参数
+
+| 名称 | 类型 | 默认显示 | 描述 |
+---|:---:|:---:|---
+| 日期 | str | - | 价格调整的日期 | 
+| 汽油价格 | float | - | 价格(元/吨) | 
+| 柴油价格 | float | - | 价格(元/吨) | 
+| 汽油涨幅 | str | - | 价格(元/吨) | 
+| 柴油涨幅 | str | - | 价格(元/吨) | 
+
+接口示例
+
+```
+import gopup as gp
+df_index = gp.energy_oil_hist()
+print(df_index)
+```
+
+
 ### 影视数据
 
 #### 实时电影票房数据
