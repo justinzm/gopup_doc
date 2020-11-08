@@ -38,7 +38,9 @@ print(df_index)
 
 名称|类型|必选|描述
 ---|:---:|:---:|---
-| date | str | Y | date="2020-03-19"; 此日期为调价日期, 通过调用 energy_oil_hist 可以获取历史调价日期 | 
+| date | str | Y | date="2020-03-19" | 
+
+此日期为调价日期, 通过调用 energy_oil_hist 可以获取历史调价日期
 
 输出参数
 
