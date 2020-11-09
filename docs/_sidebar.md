@@ -6,6 +6,7 @@
     * [指数数据](data/index_data)
     * [宏观经济数据](data/macro_data)
     * [新经济数据](data/fortune_data)
+    * [KOL数据](data/kol_data)
     * [信息数据](data/info_data)
     * [生活数据](data/life_data)
     * [疫情数据](data/covid_data)
