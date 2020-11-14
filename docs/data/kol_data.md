@@ -37,7 +37,7 @@ keyword | str | Y | 关键词
 ```
 import gopup as gp
 g = gp.pro_api(token = "……")
-df_index = g.weibo_user(keyword="罗永浩")
+df_index = g.weibo_user(keyword="雷军")
 print(df_index)
 ```
 
