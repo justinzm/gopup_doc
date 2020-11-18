@@ -60,6 +60,61 @@ df_index = gp.energy_oil_hist()
 print(df_index)
 ```
 
+### 诗词数据
+
+#### 唐代诗人
+
+接口: poetry_author
+
+描述: 获取唐朝诗人姓名及诗词作品数量(vip接口，找作者所要token)
+
+输出参数
+
+| 名称 | 类型 | 默认显示 | 描述 |
+---|:---:|:---:|---
+| name | str | - | 诗人姓名 | 
+| dynasty | str | - | 所属朝代 | 
+| poetry_num | int | - | 诗词作品数量 | 
+
+接口示例
+
+```
+import gopup as gp
+g = gp.pro_api(token = "……")
+df_index = g.poetry_author()
+print(df_index)
+```
+
+#### 唐诗数据
+
+接口: poetry_data
+
+描述: 获取诗词作品(vip接口，找作者所要token)
+
+输入参数
+
+名称 | 类型 | 必须 | 描述
+---|:---:|:---:|---
+| name | str | Y | 诗人姓名，可从poetry_author接口获取诗人姓名 | 
+
+输出参数
+
+| 名称 | 类型 | 默认显示 | 描述 |
+---|:---:|:---:|---
+| title | str | - | 题目 | 
+| name | str | - | 作者 | 
+| dynasty | str | - | 朝代 | 
+| content | int | - | 诗词 | 
+
+接口示例
+
+```
+import gopup as gp
+g = gp.pro_api(token = "……")
+df_index = g.poetry_data(name="李白")
+print(df_index)
+```
+
 
 ### 影视数据
 
