@@ -58,9 +58,9 @@ index|float|Y|指数
 接口示例
 
 ```
-import akshare as ak
+import gopup as gp
 cookie = "此处输入您在网页端登录百度指数后的 cookie 数据"
-index_df = ak.baidu_search_index(word="口罩", start_date='2020-01-01', end_date='2020-03-01', cookie=cookie)
+index_df = gp.baidu_search_index(word="口罩", start_date='2020-01-01', end_date='2020-03-01', cookie=cookie)
 print(index_df)
 ```
 
