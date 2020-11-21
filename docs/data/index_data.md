@@ -46,6 +46,7 @@ print(df_index)
 word|str|Y|word="股票"
 start_date|str|Y|start_date="2010-12-27"
 end_date|str|Y|end_date="2019-12-01"
+type|str|N|默认：all 全部; pc PC端; wise 移动; 
 cookie|str|Y|cookie="您在网页端登录百度指数后的 cookie 数据"; 
 
 输出参数
