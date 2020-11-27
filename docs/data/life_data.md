@@ -392,3 +392,37 @@ import gopup as gp
 df_index = gp.adult_university()
 print(df_index)
 ```
+
+#### 全国高等学校详情数据
+
+接口: details_university
+
+目标地址: http://www.moe.gov.cn/
+
+描述: 获取全国高等学校详情数据(vip接口，找作者所要token)
+
+输入参数
+
+名称 | 类型 | 必须 | 描述
+---|:---:|:---:|---
+name | str | Y | 高校名称
+
+输出参数
+
+| 名称 | 类型 | 默认显示 | 描述 |
+---|:---:|:---:|---
+| name | str | Y | 高校名称 |
+| logo | str | Y | 高校logo |
+| summary | str | Y | 高校概要 |
+| imgs | str | Y | 高校图片 |
+| tags | str | Y | 高校标签 |
+| attrs | str | Y | 高校属性 |
+
+接口示例
+
+```
+import gopup as gp
+g = gp.pro_api(token = "……")
+df_index = g.details_university(name="北京大学")
+print(df_index)
+```
