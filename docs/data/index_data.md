@@ -268,15 +268,15 @@ index_df = gp.baidu_interest_index(word="口罩", cookie=cookie)
 print(index_df)
 ```
 
-### 头条数据
+### 算数数据
 
-#### 头条指数数据
+#### 算数指数数据
 
 接口: toutiao_index
 
 目标地址: https://index.toutiao.com/
 
-描述: 获取指定 **词语** 的头条指数
+描述: 获取指定 **词语** 的算数指数
 
 输入参数
 
@@ -285,6 +285,7 @@ print(index_df)
 keyword|str|Y|keyword="股票"
 start_date|str|Y|start_date="20201016"
 end_date|str|Y|end_date="20201022"
+app_name|str|N|app_name="toutiao" 默认：头条  抖音为aweme
 
 输出参数
 
@@ -297,18 +298,18 @@ index|float|Y|指数
 
 ```
 import gopup as gp
-index_df = gp.toutiao_index(keyword="口罩", start_date='20201016', end_date='20201022')
+index_df = gp.toutiao_index(keyword="口罩", start_date='20201016', end_date='20201022', app_name='aweme')
 print(index_df)
 ```
 
 
-#### 头条相关性分析
+#### 算数相关性分析
 
 接口: toutiao_relation
 
 目标地址: https://index.toutiao.com/
 
-描述: 获取指定 **词语** 的头条相关性分析
+描述: 获取指定 **词语** 的算数相关性分析
 
 输入参数
 
@@ -317,6 +318,7 @@ print(index_df)
 keyword|str|Y|keyword="股票"
 start_date|str|Y|start_date="20201016"
 end_date|str|Y|end_date="20201022"
+app_name|str|N|app_name="toutiao" 默认：头条  抖音为aweme
 
 输出参数
 
@@ -332,50 +334,18 @@ search_ratio|float|Y|搜索比率
 
 ```
 import gopup as gp
-index_df = gp.toutiao_relation(keyword="口罩", start_date='20201016', end_date='20201022')
+index_df = gp.toutiao_relation(keyword="口罩", start_date='20201016', end_date='20201022', app_name='aweme')
 print(index_df)
 ```
 
 
-#### 头条情感分析
-
-接口: toutiao_sentiment
-
-目标地址: https://index.toutiao.com/
-
-描述: 获取指定 **词语** 的头条情感分析
-
-输入参数
-
-名称|类型|必选|描述
----|:---:|:---:|---
-keyword|str|Y|keyword="股票"
-start_date|str|Y|start_date="20201016"
-end_date|str|Y|end_date="20201022"
-
-输出参数
-
-名称|类型|默认显示|描述
----|:---:|:---:|---
-keyword|str|Y|相关词
-score|float|Y|情感值
-
-接口示例
-
-```
-import gopup as gp
-index_df = gp.toutiao_sentiment(keyword="口罩", start_date='20201016', end_date='20201022')
-print(index_df)
-```
-
-
-#### 头条地域分析
+#### 算数地域分析
 
 接口: toutiao_province
 
 目标地址: https://index.toutiao.com/
 
-描述: 获取指定 **词语** 的头条地域分析
+描述: 获取指定 **词语** 的算数地域分析
 
 输入参数
 
@@ -384,6 +354,7 @@ print(index_df)
 keyword|str|Y|keyword="股票"
 start_date|str|Y|start_date="20201016"
 end_date|str|Y|end_date="20201022"
+app_name|str|N|app_name="toutiao" 默认：头条  抖音为aweme
 
 输出参数
 
@@ -396,18 +367,18 @@ value|float|Y|渗透率
 
 ```
 import gopup as gp
-index_df = gp.toutiao_province(keyword="口罩", start_date='20201016', end_date='20201022')
+index_df = gp.toutiao_province(keyword="口罩", start_date='20201016', end_date='20201022', app_name='aweme')
 print(index_df)
 ```
 
 
-#### 头条城市分析
+#### 算数城市分析
 
 接口: toutiao_city
 
 目标地址: https://index.toutiao.com/
 
-描述: 获取指定 **词语** 的头条城市分析
+描述: 获取指定 **词语** 的算数城市分析
 
 输入参数
 
@@ -416,6 +387,7 @@ print(index_df)
 keyword|str|Y|keyword="股票"
 start_date|str|Y|start_date="20201016"
 end_date|str|Y|end_date="20201022"
+app_name|str|N|app_name="toutiao" 默认：头条  抖音为aweme
 
 输出参数
 
@@ -428,18 +400,18 @@ value|float|Y|渗透率
 
 ```
 import gopup as gp
-index_df = gp.toutiao_city(keyword="口罩", start_date='20201016', end_date='20201022')
+index_df = gp.toutiao_city(keyword="口罩", start_date='20201016', end_date='20201022', app_name='aweme')
 print(index_df)
 ```
 
 
-#### 头条年龄分析
+#### 算数年龄分析
 
 接口: toutiao_age
 
 目标地址: https://index.toutiao.com/
 
-描述: 获取指定 **词语** 的头条年龄分析
+描述: 获取指定 **词语** 的算数年龄分析
 
 输入参数
 
@@ -448,6 +420,7 @@ print(index_df)
 keyword|str|Y|keyword="股票"
 start_date|str|Y|start_date="20201016"
 end_date|str|Y|end_date="20201022"
+app_name|str|N|app_name="toutiao" 默认：头条  抖音为aweme
 
 输出参数
 
@@ -460,18 +433,18 @@ value|float|Y|渗透率
 
 ```
 import gopup as gp
-index_df = gp.toutiao_age(keyword="口罩", start_date='20201016', end_date='20201022')
+index_df = gp.toutiao_age(keyword="口罩", start_date='20201016', end_date='20201022', app_name='aweme')
 print(index_df)
 ```
 
 
-#### 头条性别分析
+#### 算数性别分析
 
 接口: toutiao_gender
 
 目标地址: https://index.toutiao.com/
 
-描述: 获取指定 **词语** 的头条性别分析
+描述: 获取指定 **词语** 的算数性别分析
 
 输入参数
 
@@ -480,6 +453,7 @@ print(index_df)
 keyword|str|Y|keyword="股票"
 start_date|str|Y|start_date="20201016"
 end_date|str|Y|end_date="20201022"
+app_name|str|N|app_name="toutiao" 默认：头条  抖音为aweme
 
 输出参数
 
@@ -492,18 +466,18 @@ value|float|Y|渗透率
 
 ```
 import gopup as gp
-index_df = gp.toutiao_gender(keyword="口罩", start_date='20201016', end_date='20201022')
+index_df = gp.toutiao_gender(keyword="口罩", start_date='20201016', end_date='20201022', app_name='aweme')
 print(index_df)
 ```
 
 
-#### 头条用户阅读兴趣分类
+#### 算数用户阅读兴趣分类
 
 接口: toutiao_interest_category
 
 目标地址: https://index.toutiao.com/
 
-描述: 获取指定 **词语** 的头条用户阅读兴趣分类
+描述: 获取指定 **词语** 的算数用户阅读兴趣分类
 
 输入参数
 
@@ -512,6 +486,7 @@ print(index_df)
 keyword|str|Y|keyword="股票"
 start_date|str|Y|start_date="20201016"
 end_date|str|Y|end_date="20201022"
+app_name|str|N|app_name="toutiao" 默认：头条  抖音为aweme
 
 输出参数
 
@@ -524,7 +499,7 @@ value|float|Y|渗透率
 
 ```
 import gopup as gp
-index_df = gp.toutiao_interest_category(keyword="口罩", start_date='20201016', end_date='20201022')
+index_df = gp.toutiao_interest_category(keyword="口罩", start_date='20201016', end_date='20201022', app_name='aweme')
 print(index_df)
 ```
 
