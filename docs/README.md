@@ -7,6 +7,12 @@
 
 部分接口需要TOKEN，[官网](http://www.gopup.cn)注册获取TOKEN
 
+## 打赏作者
+
+![支付宝打赏](http://www.gopup.cn/static/home_static/img/zfb.jpg)
+
+![微信打赏](http://www.gopup.cn/static/home_static/img/wx.jpg)
+
 ## 数据仓库
 
 - 指数数据
