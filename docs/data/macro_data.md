@@ -48,7 +48,7 @@ print(df_index)
 
 目标地址: https://chl.cn/
 
-描述: 获取货币汇率数据(vip接口，找作者所要token)
+描述: 获取货币汇率数据 
 
 输入参数
 

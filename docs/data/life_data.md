@@ -172,7 +172,7 @@ print(migration_scale_baidu_df)
 
 接口: poetry_author
 
-描述: 获取唐朝诗人姓名及诗词作品数量(vip接口，找作者所要token)
+描述: 获取唐朝诗人姓名及诗词作品数量 
 
 输出参数
 
@@ -195,7 +195,7 @@ print(df_index)
 
 接口: poetry_data
 
-描述: 获取诗词作品(vip接口，找作者所要token)
+描述: 获取诗词作品 
 
 输入参数
 
@@ -505,7 +505,7 @@ print(df_index)
 
 目标地址: http://www.moe.gov.cn/
 
-描述: 获取全国高等学校详情数据(vip接口，找作者所要token)
+描述: 获取全国高等学校详情数据 
 
 输入参数
 
