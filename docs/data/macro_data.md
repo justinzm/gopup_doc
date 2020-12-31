@@ -41,6 +41,216 @@ print(df_index)
 ..      ...        ...         ...  ...         ...        ...        ...
 ```
 
+#### 国内生产总值数据
+
+接口: get_gdp_quarter
+
+目标地址: http://datainterface.eastmoney.com
+
+描述: 获取中国国内生产总值数据
+
+输出参数
+
+| 名称 | 类型 | 默认显示 | 描述 |
+---|:---:|:---:|---
+| 季度 | str | Y | - |
+| 国内生产总值 绝对值(亿元) | str | Y | - |
+| 国内生产总值 同比增长 | str | Y | - |
+| 第一产业 绝对值(亿元) | str | Y | - |
+| 第一产业 同比增长 | str | Y | - |
+| 第二产业 绝对值(亿元) | str | Y | - |
+| 第二产业 同比增长 | str | Y | - |
+| 第三产业 绝对值(亿元) | str | Y | - |
+| 第三产业 同比增长 | str | Y | - |
+
+接口示例
+
+```
+import gopup as gp
+df_index = gp.get_gdp_quarter()
+print(df_index)
+```
+
+#### 居民消费价格指数数据(CPI)
+
+接口: get_cpi
+
+目标地址: http://datainterface.eastmoney.com
+
+描述: 获取居民消费价格指数数据(CPI)
+
+输出参数
+
+| 名称 | 类型 | 默认显示 | 描述 |
+---|:---:|:---:|---
+| 月份 | str | Y | - |
+| 全国当月 | str | Y | - |
+| 全国同比增长 | str | Y | - |
+| 全国环比增长 | str | Y | - |
+| 全国累计 | str | Y | - |
+| 城市当月 | str | Y | - |
+| 城市同比增长 | str | Y | - |
+| 城市环比增长 | str | Y | - |
+| 城市累计 | str | Y | - |
+| 农村当月 | str | Y | - |
+| 农村同比增长 | str | Y | - |
+| 农村环比增长 | str | Y | - |
+| 农村累计 | str | Y | - |
+
+接口示例
+
+```
+import gopup as gp
+df_index = gp.get_cpi()
+print(df_index)
+```
+
+
+#### 工业品出厂价格指数(PPI)
+
+接口: get_ppi
+
+目标地址: http://datainterface.eastmoney.com
+
+描述: 获取工业品出厂价格指数(PPI)
+
+输出参数
+
+| 名称 | 类型 | 默认显示 | 描述 |
+---|:---:|:---:|---
+| 月份 | str | Y | - |
+| 当月 | str | Y | - |
+| 当月同比增长 | str | Y | - |
+| 累计 | str | Y | - |
+
+接口示例
+
+```
+import gopup as gp
+df_index = gp.get_ppi()
+print(df_index)
+```
+
+
+#### 采购经理人指数(PMI)
+
+接口: get_pmi
+
+目标地址: http://datainterface.eastmoney.com
+
+描述: 获取采购经理人指数(PMI)
+
+输出参数
+
+| 名称 | 类型 | 默认显示 | 描述 |
+---|:---:|:---:|---
+| 月份 | str | Y | - |
+| 制造业指数 | str | Y | - |
+| 制造业同比增长 | str | Y | - |
+| 非制造业指数 | str | Y | - |
+| 非制造业同比增长 | str | Y | - |
+
+接口示例
+
+```
+import gopup as gp
+df_index = gp.get_pmi()
+print(df_index)
+```
+
+
+#### 存款准备金率数据
+
+接口: get_rrr
+
+目标地址: http://datainterface.eastmoney.com
+
+描述: 存款准备金率数据
+
+输出参数
+
+| 名称 | 类型 | 默认显示 | 描述 |
+---|:---:|:---:|---
+| 公布时间 | str | Y | - |
+| 生效时间 | str | Y | - |
+| 大型金融机构 调整前 | str | Y | - |
+| 大型金融机构 调整后 | str | Y | - |
+| 大型金融机构 调整幅度 | str | Y | - |
+| 中小型金融机构 调整前 | str | Y | - |
+| 中小型金融机构 调整后 | str | Y | - |
+| 中小型金融机构 调整幅度 | str | Y | - |
+| 消息公布次日指数涨跌 上证 | str | Y | - |
+| 消息公布次日指数涨跌 深证 | str | Y | - |
+| 备注 | str | Y | - |
+
+接口示例
+
+```
+import gopup as gp
+df_index = gp.get_rrr()
+print(df_index)
+```
+
+
+#### 货币供应量数据
+
+接口: get_money_supply
+
+目标地址: http://datainterface.eastmoney.com
+
+描述: 存款准备金率数据
+
+输出参数
+
+| 名称 | 类型 | 默认显示 | 描述 |
+---|:---:|:---:|---
+| 月份 | str | Y | - |
+| 货币和准货币(M2) 数量(亿元) | str | Y | - |
+| 货币和准货币(M2) 同比增长 | str | Y | - |
+| 货币和准货币(M2) 环比增长 | str | Y | - |
+| 货币(M1) 数量(亿元) | str | Y | - |
+| 货币(M1) 同比增长 | str | Y | - |
+| 货币(M1) 环比增长 | str | Y | - |
+| 流通中的现金(M0) 数量(亿元) | str | Y | - |
+| 流通中的现金(M0) 同比增长 | str | Y | - |
+| 流通中的现金(M0) 环比增长 | str | Y | - |
+
+接口示例
+
+```
+import gopup as gp
+df_index = gp.get_money_supply()
+print(df_index)
+```
+
+#### 外汇和黄金储备数据
+
+接口: get_gold_and_foreign_reserves
+
+目标地址: http://datainterface.eastmoney.com
+
+描述: 外汇和黄金储备数据
+
+输出参数
+
+| 名称 | 类型 | 默认显示 | 描述 |
+---|:---:|:---:|---
+| 月份 | str | Y | - |
+| 国家外汇储备(亿美元) 数值 | str | Y | - |
+| 国家外汇储备(亿美元) 同比 | str | Y | - |
+| 国家外汇储备(亿美元) 环比 | str | Y | - |
+| 黄金储备(万盎司) 数值 | str | Y | - |
+| 黄金储备(万盎司) 同比 | str | Y | - |
+| 黄金储备(万盎司) 环比 | str | Y | - |
+
+接口示例
+
+```
+import gopup as gp
+df_index = gp.get_gold_and_foreign_reserves()
+print(df_index)
+```
+
 
 #### 货币汇率数据
 
