@@ -7,12 +7,6 @@
 
 部分接口需要TOKEN，[官网](http://www.gopup.cn)注册获取TOKEN
 
-## 打赏作者
-
-![支付宝打赏](http://www.gopup.cn/static/home_static/images/zfb.jpg)
-
-![微信打赏](http://www.gopup.cn/static/home_static/images/wx.jpg)
-
 ## 数据仓库
 
 - 指数数据
@@ -57,10 +51,10 @@
     - 独角兽公司
     - 倒闭公司
     - 商业特许经营公司
-- KOL数据
+<!-- - KOL数据
     - 微博数据
         - 微博账户数据
-        - 微博运营数据
+        - 微博运营数据 -->
 - 信息数据
     - 新闻联播文字稿
 - 生活数据
