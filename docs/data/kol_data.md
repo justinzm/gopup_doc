@@ -2,7 +2,7 @@
 
 ### 微博数据
 
-#### 微博账户数据
+#### 账户基本数据
 
 接口: weibo_user
 
@@ -14,69 +14,82 @@
 
 名称 | 类型 | 必须 | 描述
 ---|:---:|:---:|---
-keyword | str | Y | 关键词
+user_id | str | Y | 账户ID
 
 输出参数
 
 | 名称 | 类型 | 默认显示 | 描述 |
 ---|:---:|:---:|---
-| user_id | int | Y | 用户ID |
-| nink_name | str | Y | 用户昵称 |
-| avatar | str | Y | 头像 |
-| province | str | Y | 省 |
-| city | str | Y | 市 |
-| gender | str | Y | 性别 |
-| friends_count | str | Y | 关注量 |
-| followers_count | str | Y | 粉丝量 |
-| favourites_count | str | Y | 收藏量 |
-| statuses_count | str | Y | 微博量 |
-| created_at | str | Y | 创建时间 |
+| 用户id | int | Y | 用户ID |
+| 用户昵称 | str | Y | 用户昵称 |
+| 性别 | str | Y | 性别 |
+| 生日 | str | Y | 生日 |
+| 所在地 | str | Y | 所在地 |
+| 小学 | str | Y | 小学 |
+| 初中 | str | Y | 初中 |
+| 高中 | str | Y | 高中 |
+| 大学 | str | Y | 大学 |
+| 公司 | str | Y | 公司 |
+| 注册时间 | str | Y | 注册时间 |
+| 阳光信用 | str | Y | 阳光信用 |
+| 微博数 | str | Y | 微博数 |
+| 粉丝数 | str | Y | 粉丝数 |
+| 关注数 | str | Y | 关注数 |
+| 描述 | str | Y | 描述 |
+| 网址 | str | Y | 网址 |
+| 头像 | str | Y | 头像 |
+| 头像原图 | str | Y | 头像原图 |
+| urank | str | Y | urank |
+| mbrank | str | Y | mbrank |
+| 是否认证 | str | Y | 是否认证 |
+| 认证类型 | str | Y | 认证类型 |
+| 微博认证 | str | Y | 微博认证 |
 
 接口示例
 
 ```
 import gopup as gp
-g = gp.pro_api(token = "……")
-df_index = g.weibo_user(keyword="雷军")
-print(df_index)
+df = gp.weibo_user(user_id="2609084213")
+print(df)
 ```
 
-#### 微博运营数据
+#### 微博信息
 
-接口: weibo_urls
+接口: weibo_list
 
 目标地址: http://www.weibo.com/
 
-描述: 通过微博链接获取该微博的基本数据 
+描述: 通过微博账户获取微博的信息（用于研究只提供15天内的原创信息） 
 
 输入参数
 
 名称 | 类型 | 必须 | 描述
 ---|:---:|:---:|---
-urls | list | Y | 微博文章url
+user_id | str | Y | 账户ID
 
 输出参数
 
 | 名称 | 类型 | 默认显示 | 描述 |
 ---|:---:|:---:|---
-| user_id | int | Y | 用户ID |
-| nink_name | str | Y | 用户昵称 |
-| url | str | Y | 微博URL |
-| province | str | Y | 省 |
-| city | str | Y | 市 |
-| source | str | Y | 来源 |
-| text | str | Y | 文章内容 |
-| reposts_count | str | Y | 转发量 |
-| comments_count | str | Y | 评论量 |
-| attitudes_count | str | Y | 点赞量 |
-| pic_urls | str | Y | 图片url |
-| created_at | str | Y | 创建时间 |
+| 用户ID | int | Y | 用户ID |
+| 微博名 | str | Y | 微博名 |
+| 正文 | str | Y | 正文 |
+| 头条文章url | str | Y | 头条文章url |
+| 原始图片url | str | Y | 原始图片url |
+| 视频url | str | Y | 视频url |
+| 位置 | str | Y | 位置 |
+| 发布日期 | str | Y | 发布日期 |
+| 来源 | str | Y | 来源 |
+| 点赞数 | str | Y | 点赞数 |
+| 评论数 | str | Y | 评论数 |
+| 转发数 | str | Y | 转发数 |
+| 话题 | str | Y | 话题 |
+| @用户 | str | Y | @用户 |
 
 接口示例
 
 ```
 import gopup as gp
-g = gp.pro_api(token = "……")
-df_index = g.weibo_urls(urls=["https://weibo.com/3151530492/JsWLgaBPp"])
-print(df_index)
+df = gp.weibo_list(user_id="2609084213")
+print(df)
 ```
