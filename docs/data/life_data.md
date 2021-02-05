@@ -129,10 +129,9 @@ print(migration_area_baidu_df)
 
 名称|类型|必选|描述
 ---|:---:|:---:|---
-area|str|Y|area="武汉", 输入需要查询的省份或者城市, 都需要用全称, 比如 湖北省, 武汉市
+area|str|Y|area="武汉市", 输入需要查询的省份或者城市, 都需要用全称, 比如 湖北省, 武汉市
 indicator|str|Y|indicator="move_in", 返回迁入地详情, indicator="move_in", 返回迁出地详情
-start_date|str|Y|start_date="20190112", 一般不要变化
-end_date|str|Y|end_date="20200201", 往后查询如 20200202 之后
+date|str|Y|date="20200201", 往后查询如 20200202 之后
 
 输出参数
 
@@ -145,7 +144,7 @@ end_date|str|Y|end_date="20200201", 往后查询如 20200202 之后
 
 ```
 import gopup as gp
-migration_scale_baidu_df = gp.migration_scale_baidu(area="湖北省", indicator="move_out", start_date="20190112", end_date="20200201")
+migration_scale_baidu_df = gp.migration_scale_baidu(area="湖北省", indicator="move_out", date="20200201")
 print(migration_scale_baidu_df)
 ```
 

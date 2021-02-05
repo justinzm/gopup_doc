@@ -288,3 +288,141 @@ g = gp.pro_api(token = "……")
 df_index = g.exchange_rate(date="2020-10-10", currency="美元")
 print(df_index)
 ```
+
+#### 工业增加值增长
+
+接口: get_industrial_growth
+
+目标地址: http://datainterface.eastmoney.com
+
+描述: 工业增加值增长
+
+输出参数
+
+| 名称 | 类型 | 默认显示 | 描述 |
+---|:---:|:---:|---
+| 月份 | str | Y | - |
+| 同比增长 | str | Y | - |
+| 累计增长 | str | Y | - |
+
+接口示例
+
+```
+import gopup as gp
+df_index = gp.get_industrial_growth()
+print(df_index)
+```
+
+
+#### 财政收入
+
+接口: get_fiscal_revenue
+
+目标地址: http://datainterface.eastmoney.com
+
+描述: 财政收入
+
+输出参数
+
+| 名称 | 类型 | 默认显示 | 描述 |
+---|:---:|:---:|---
+| 月份 | str | Y | - |
+| 当月(亿元) | str | Y | - |
+| 同比增长 | str | Y | - |
+| 环比增长 | str | Y | - |
+| 累计(亿元) | str | Y | - |
+| 同比增长 | str | Y | - |
+
+接口示例
+
+```
+import gopup as gp
+df_index = gp.get_fiscal_revenue()
+print(df_index)
+```
+
+
+#### 社会消费品零售总额
+
+接口: get_consumer_total
+
+目标地址: http://datainterface.eastmoney.com
+
+描述: 社会消费品零售总额
+
+输出参数
+
+| 名称 | 类型 | 默认显示 | 描述 |
+---|:---:|:---:|---
+| 月份 | str | Y | - |
+| 当月(亿元) | str | Y | - |
+| 同比增长 | str | Y | - |
+| 环比增长 | str | Y | - |
+| 累计(亿元) | str | Y | - |
+| 同比增长 | str | Y | - |
+
+接口示例
+
+```
+import gopup as gp
+df_index = gp.get_consumer_total()
+print(df_index)
+```
+
+
+#### 信贷数据
+
+接口: get_credit_data
+
+目标地址: http://datainterface.eastmoney.com
+
+描述: 信贷数据
+
+输出参数
+
+| 名称 | 类型 | 默认显示 | 描述 |
+---|:---:|:---:|---
+| 月份 | str | Y | - |
+| 当月(亿元) | str | Y | - |
+| 同比增长 | str | Y | - |
+| 环比增长 | str | Y | - |
+| 累计(亿元) | str | Y | - |
+| 同比增长 | str | Y | - |
+
+接口示例
+
+```
+import gopup as gp
+df_index = gp.get_credit_data()
+print(df_index)
+```
+
+
+#### 外商直接投资数据(FDI)
+
+接口: get_fdi_data
+
+目标地址: http://datainterface.eastmoney.com
+
+描述: 外商直接投资数据(FDI)
+
+输出参数
+
+| 名称 | 类型 | 默认显示 | 描述 |
+---|:---:|:---:|---
+| 月份 | str | Y | - |
+| 当月(亿元) | str | Y | - |
+| 同比增长 | str | Y | - |
+| 环比增长 | str | Y | - |
+| 累计(亿元) | str | Y | - |
+| 同比增长 | str | Y | - |
+
+接口示例
+
+```
+import gopup as gp
+df_index = gp.get_fdi_data()
+print(df_index)
+```
+
+
