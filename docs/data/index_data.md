@@ -576,3 +576,35 @@ import gopup as gp
 index_df = gp.google_fact_check(keyword="口罩", offset=0, limit=100, hl=None)
 print(index_df)
 ```
+
+### 搜狗指数数据
+#### 搜狗指数趋势数据
+接口: sogou_index
+
+目标地址: https://www.sogou.com
+
+描述: 获取指定 **词语** 的搜狗指数
+
+输入参数
+
+ | 名称 | 类型 | 必须 | 描述 | 
+ | ---|:---:|:---:|--- | 
+ | keyword | str | Y | 关键词 | 
+ | start_date | str | Y | 开始时间 | 
+ | end_date | str | Y | 截止日期 | 
+ | data_type | str | N | 指数趋势 默认 整体趋势（SEARCH_ALL）； PC趋势（SEARCH_PC）； 移动趋势（SEARCH_WAP） | 
+
+输出参数
+
+| 名称 | 类型 | 默认显示 | 描述 |
+---|:---:|:---:|---
+| date | datetime | Y | 日期 |
+| index | float | Y | 指数 |
+
+接口示例
+
+```
+import gopup as gp
+df_index = gp.sogou_index(keyword="耐克", start_date="20210101", end_date="20210218", data_type="SEARCH_ALL")
+print(df_index)
+```
