@@ -257,7 +257,7 @@ print(df_index)
 
 接口: zhihu_hot_search_list
 
-目标地址: http://wx.zhihu.com/
+目标地址: http://www.zhihu.com/
 
 描述: 获取知乎热搜榜信息 
 
@@ -282,7 +282,7 @@ print(df_index)
 
 接口: zhihu_hot_list
 
-目标地址: http://wx.zhihu.com/
+目标地址: http://www.zhihu.com/
 
 描述: 获取知乎热榜信息 
 
@@ -311,7 +311,7 @@ print(df_index)
 
 接口: douban_movie_list
 
-目标地址: http://wx.douban.com/
+目标地址: http://www.douban.com/
 
 描述: 获取豆瓣新片榜信息 
 
@@ -339,7 +339,7 @@ print(df_index)
 
 接口: douban_week_praise_list
 
-目标地址: http://wx.douban.com/
+目标地址: http://www.douban.com/
 
 描述: 获取豆瓣一周口碑榜信息 
 
