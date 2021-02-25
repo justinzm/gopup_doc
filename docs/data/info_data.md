@@ -25,7 +25,7 @@ date | str | Y | 日期 如：2020-10-01
 ```
 import gopup as gp
 g = gp.pro_api(token = "……")
-df_index = g.cctv_news(date="2020-10-10")
+df_index = gp.cctv_news(date="2020-10-10")
 print(df_index)
 ```
 
@@ -51,7 +51,7 @@ print(df_index)
 
 ```
 import gopup as gp
-df_index = g.history_daily()
+df_index = gp.history_daily()
 print(df_index)
 ```
 
@@ -83,7 +83,7 @@ print(df_index)
 
 ```
 import gopup as gp
-df_index = g.baidu_hot_list()
+df_index = gp.baidu_hot_list()
 print(df_index)
 ```
 
@@ -113,7 +113,7 @@ print(df_index)
 
 ```
 import gopup as gp
-df_index = g.baidu_today_hot_list()
+df_index = gp.baidu_today_hot_list()
 print(df_index)
 ```
 
@@ -140,7 +140,7 @@ print(df_index)
 
 ```
 import gopup as gp
-df_index = g.baidu_hot_word_list()
+df_index = gp.baidu_hot_word_list()
 print(df_index)
 ```
 
@@ -168,7 +168,7 @@ print(df_index)
 
 ```
 import gopup as gp
-df_index = g.weibo_hot_search_list()
+df_index = gp.weibo_hot_search_list()
 print(df_index)
 ```
 
@@ -193,7 +193,7 @@ print(df_index)
 
 ```
 import gopup as gp
-df_index = g.weibo_new_era_list()
+df_index = gp.weibo_new_era_list()
 print(df_index)
 ```
 
@@ -221,7 +221,7 @@ print(df_index)
 
 ```
 import gopup as gp
-df_index = g.weibo_hot_search_list()
+df_index = gp.weibo_hot_search_list()
 print(df_index)
 ```
 
@@ -247,7 +247,7 @@ print(df_index)
 
 ```
 import gopup as gp
-df_index = g.wx_hot_list()
+df_index = gp.wx_hot_list()
 print(df_index)
 ```
 
@@ -274,7 +274,7 @@ print(df_index)
 
 ```
 import gopup as gp
-df_index = g.zhihu_hot_search_list()
+df_index = gp.zhihu_hot_search_list()
 print(df_index)
 ```
 
@@ -301,7 +301,7 @@ print(df_index)
 
 ```
 import gopup as gp
-df_index = g.zhihu_hot_list()
+df_index = gp.zhihu_hot_list()
 print(df_index)
 ```
 
@@ -331,7 +331,7 @@ print(df_index)
 
 ```
 import gopup as gp
-df_index = g.douban_movie_list()
+df_index = gp.douban_movie_list()
 print(df_index)
 ```
 
@@ -356,6 +356,6 @@ print(df_index)
 
 ```
 import gopup as gp
-df_index = g.douban_week_praise_list()
+df_index = gp.douban_week_praise_list()
 print(df_index)
 ```
