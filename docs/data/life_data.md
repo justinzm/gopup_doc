@@ -222,6 +222,63 @@ df_index = g.poetry_data(name="李白")
 print(df_index)
 ```
 
+### 火车数据
+
+#### 车站信息
+
+接口: station_name
+
+描述: 获取国内所有火车车站信息 
+
+输出参数
+
+| 名称 | 类型 | 默认显示 | 描述 |
+---|:---:|:---:|---
+| 站名 | str | - | 站名 | 
+| 拼音码 | str | - | 拼音码 | 
+| 电报码 | str | - | 电报码 | 
+| 首字母 | str | - | 首字母 | 
+| 拼音 | str | - | 拼音 | 
+
+接口示例
+
+```
+import gopup as gp
+df_index = gp.station_name()
+print(df_index)
+```
+
+#### 车次时刻表
+
+接口: train_time_table
+
+描述: 获取火车车次时刻表
+
+输入参数
+
+| 名称 | 类型 | 默认显示 | 描述 |
+---|:---:|:---:|---
+| train_number | str | - | 车次 如：T15 | 
+
+输出参数
+
+| 名称 | 类型 | 默认显示 | 描述 |
+---|:---:|:---:|---
+| 车次 | str | - | 车次 | 
+| 车型 | str | - | 车型 | 
+| 始发站 | str | - | 始发站 | 
+| 终点站 | str | - | 终点站 | 
+| 始发时 | str | - | 始发时 | 
+| 终到时 | str | - | 终到时 | 
+| 全程时间 | str | - | 全程时间 | 
+
+接口示例
+
+```
+import gopup as gp
+df_index = gp.train_time_table(train_number="T15")
+print(df_index)
+```
 
 ### 影视数据
 
