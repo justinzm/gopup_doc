@@ -1,3 +1,23 @@
+### 老黄历
+接口: laohuangli
+
+描述: 获取唐朝诗人姓名及诗词作品数量 
+
+输出参数
+
+| 名称 | 类型 | 默认显示 | 描述 |
+---|:---:|:---:|---
+| date | str | - | 日期 默认为今日 | 
+
+接口示例
+
+```
+import gopup as gp
+g = gp.pro_api(token = "……")
+df_index = g.laohuangli(date="2021-05-01")
+print(df_index)
+```
+
 ### 中国油价数据
 
 #### 汽柴油历史调价信息
