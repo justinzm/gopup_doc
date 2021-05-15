@@ -1,7 +1,16 @@
+<!--
+ * @Author       : Justin.zm 草根之明
+ * @Date         : 2021-05-15 16:57:02
+ * @LastEditTime : 2021-05-15 20:52:30
+ * @FilePath     : /gopup_doc/docs/about/changlog.md
+ * @Email        : 3907721@qq.com
+ * @Description  : 
+-->
 # 版本更新
     
-    0.3.5
+    0.3.6
     生活数据: 老黄历
+    信息数据: 中国电竞价值排行榜 
 
     0.3.5
     生活数据: 车站信息、车次时刻表

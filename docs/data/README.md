@@ -1,3 +1,11 @@
+<!--
+ * @Author       : Justin.zm 草根之明
+ * @Date         : 2021-02-27 14:19:57
+ * @LastEditTime : 2021-05-15 20:52:55
+ * @FilePath     : /gopup_doc/docs/data/README.md
+ * @Email        : 3907721@qq.com
+ * @Description  : 
+-->
 # 数据仓库
 
 
@@ -69,6 +77,9 @@
     - 豆瓣排行榜
         - 豆瓣新片榜
         - 豆瓣一周口碑榜
+    - 中国电竞价值排行榜
+        - 俱乐部排行榜
+        - 选手排行榜
 - 生活数据
     - 中国油价数据
         - 汽柴油历史调价信息

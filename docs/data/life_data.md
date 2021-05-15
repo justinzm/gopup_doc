@@ -608,3 +608,80 @@ g = gp.pro_api(token = "……")
 df_index = g.details_university(name="北京大学")
 print(df_index)
 ```
+
+### 中国电竞价值排行榜
+
+#### 俱乐部排行榜
+
+接口: club_rank
+
+目标地址: http://rank.uuu9.com/
+
+描述: 获取中国电竞价值俱乐部排行榜
+
+输入参数
+
+名称 | 类型 | 必须 | 描述
+---|:---:|:---:|---
+type | str | Y | 英雄联盟、绝地求生、王者荣耀、穿越火线、和平精英、DOTA2 其中一个
+
+输出参数
+
+| 名称 | 类型 | 默认显示 | 描述 |
+---|:---:|:---:|---
+| 日期 | str | Y | 日期 |
+| 类型 | str | Y | 类型 |
+| 排名 | str | Y | 排名 |
+| 俱乐部logo | str | Y | 俱乐部logo |
+| 俱乐部名称 | str | Y | 俱乐部名称 |
+| 人气指数 | str | Y | 人气指数 |
+| 舆论指数 | str | Y | 舆论指数 |
+| 综合指数 | str | Y | 综合指数 |
+| 排名变动 | str | Y | 排名变动 |
+
+接口示例
+
+```
+import gopup as gp
+df_index = gp.club_rank(type="王者荣耀")
+print(df_index)
+```
+
+#### 选手排行榜
+
+接口: player_rank
+
+目标地址: http://rank.uuu9.com/
+
+描述: 获取中国电竞价值选手排行榜
+
+输入参数
+
+名称 | 类型 | 必须 | 描述
+---|:---:|:---:|---
+type | str | Y | 英雄联盟、绝地求生、王者荣耀、穿越火线、和平精英、DOTA2 其中一个
+
+输出参数
+
+| 名称 | 类型 | 默认显示 | 描述 |
+---|:---:|:---:|---
+| 日期 | str | Y | 日期 |
+| 类型 | str | Y | 类型 |
+| 排名 | str | Y | 排名 |
+| 选手头像 | str | Y | 选手头像 |
+| 选手名 | str | Y | 选手名 |
+| 所属战队 | str | Y | 所属战队 |
+| 人气指数 | str | Y | 人气指数 |
+| 舆论指数 | str | Y | 舆论指数 |
+| 战绩指数 | str | Y | 战绩指数 |
+| 综合指数 | str | Y | 综合指数 |
+| 身价 | str | Y | 身价 |
+| 排名变动 | str | Y | 排名变动 |
+
+接口示例
+
+```
+import gopup as gp
+df_index = gp.player_rank(type="王者荣耀")
+print(df_index)
+```
